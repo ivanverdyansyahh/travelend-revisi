@@ -19,10 +19,25 @@
                     <p class="fs-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque, purus sed a mi condimentum malesuada purus sollicitudin. Sit pellentesque aenean nullam volutpat sed. Nibh magna at elit eget lacus. Donec integer urna netus in quam neque. Massa aliquam auctor tempor, ornare natoque consequat ipsum odio. Id consequat dictumst faucibus blandit aliquam ipsum eu ornare nulla.</p>
 
                     <h4 class="fs-4 title mt-5">Give Feedback</h4>
-                    <form action="">
+                    <form action="" class="mt-4">
                         <input type="text" class="input mb-2" placeholder="Name">
                         <input type="text" class="input mb-2" placeholder="Email">
-                        <button type="submit" class="button">Submit Now</button>
+                        <div id="full-stars-example-two">
+                            <div class="rating-group">
+                                <input disabled checked class="rating__input rating__input--none" name="rating3" id="rating3-none" value="0" type="radio">
+                                <label aria-label="1 star" class="rating__label" for="rating3-1"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating3" id="rating3-1" value="1" type="radio">
+                                <label aria-label="2 stars" class="rating__label" for="rating3-2"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating3" id="rating3-2" value="2" type="radio">
+                                <label aria-label="3 stars" class="rating__label" for="rating3-3"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating3" id="rating3-3" value="3" type="radio">
+                                <label aria-label="4 stars" class="rating__label" for="rating3-4"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating3" id="rating3-4" value="4" type="radio">
+                                <label aria-label="5 stars" class="rating__label" for="rating3-5"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating3" id="rating3-5" value="5" type="radio">
+                            </div>
+                        </div>
+                        <button type="submit" class="button mt-2">Submit Now</button>
                     </form>
                 </div>
                 <div class="col-4">
@@ -35,15 +50,23 @@
                             <div class="modal-dialog">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <h5 class="modal-title" id="exampleModalLabel">Ticket Eiffel Tower</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
-                                ...
+                                    <div class="count-group text-center">
+                                        <span class="minus"><i class="fa-solid fa-minus"></i></span>
+                                        <span class="number">01</span>
+                                        <span class="plus"><i class="fa-solid fa-plus"></i></span>
+                                    </div>
+                                    <div class="result-group d-flex flex-row justify-content-between mt-5">
+                                        <h5 class="fs-5 result">Total Pembayaran</h5>
+                                        <h5 class="fs-5 result-price">$<span class="result-number">200</span></h5>
+                                    </div>
                                 </div>
                                 <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                                <button type="button" class="btn btn-primary">Order Ticket</button>
                                 </div>
                             </div>
                             </div>
@@ -69,7 +92,7 @@
                         <div class="card-content">
                             <div class="card-image">
                                 <img src="assets/img/img-destination.jpg" class="img-fluid img-destination" alt="Image Example Destination">
-                                <p class="fs-6 price">$200</p>
+                                <p class="fs-6 start-price">$<span class="price-count">200</span></p>
                             </div>
                             <div class="card-description">
                                 <div class="time d-flex flex-row align-items-center mb-2">
